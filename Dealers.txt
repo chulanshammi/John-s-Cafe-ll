@@ -1,0 +1,6 @@
+Anne, 0716482642, Colombo
+Roy, 0789214625, Kadawatha
+Tom, 0775468291, Gampaha
+Jerry, 0339554561, Kadawatha
+John, 0116646175, Veyangoda
+Lisa, 0334635975, Moratuwa

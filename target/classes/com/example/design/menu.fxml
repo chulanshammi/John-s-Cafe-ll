@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.menuController">
+    <children>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="388.0" prefWidth="598.0">
+            <children>
+                <Button fx:id="aidButton" layoutX="103.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#aidClick" prefHeight="25.0" prefWidth="60.0" text="AID" />
+                <Button fx:id="didButton" layoutX="103.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#didClick" prefHeight="18.0" prefWidth="60.0" text="DID" />
+                <Button fx:id="uidButton" layoutX="103.0" layoutY="120.0" mnemonicParsing="false" onMouseClicked="#uidClick" prefHeight="25.0" prefWidth="60.0" text="UID" />
+                <Button fx:id="vidButton" layoutX="103.0" layoutY="155.0" mnemonicParsing="false" onMouseClicked="#vidClick" prefHeight="25.0" prefWidth="60.0" text="VID" />
+                <Button layoutX="103.0" layoutY="192.0" mnemonicParsing="false" onMouseReleased="#sidRelease" prefHeight="25.0" prefWidth="60.0" text="SID" />
+                <Button fx:id="vrlButton" layoutX="103.0" layoutY="263.0" mnemonicParsing="false" onMouseClicked="#vrlClick" prefHeight="25.0" prefWidth="60.0" text="VRL" />
+                <Button layoutX="103.0" layoutY="227.0" mnemonicParsing="false" onMouseReleased="#sddRelease" prefHeight="25.0" prefWidth="60.0" text="SDD" />
+                <Button fx:id="ldiButton" layoutX="103.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#ldiClick" prefHeight="25.0" prefWidth="60.0" text="LDI" />
+                <Text layoutX="184.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-        Adding Item Details" wrappingWidth="256.740234375" />
+                <Text layoutX="184.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-        Deleting Item Details" wrappingWidth="256.740234375" />
+                <Text layoutX="184.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-        Updating Item Details" wrappingWidth="256.740234375" />
+                <Text layoutX="184.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-        Viewing the Items Details" wrappingWidth="256.740234375" />
+                <Text layoutX="184.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-        Saving the Item Details" wrappingWidth="322.740234375" />
+                <Text layoutX="184.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-        Selecting four dealers randomly" wrappingWidth="256.740234375" />
+                <Text layoutX="184.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-        Displaying all the details of the randomly selected dealers" wrappingWidth="363.740234375" />
+                <Text layoutX="184.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-        Display the items of the given dealer" wrappingWidth="256.740234375" />
+                <Text fill="#942f2f" layoutX="186.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jhon’s Internet Café" wrappingWidth="226.13671875">
+                    <font>
+                        <Font name="Berlin Sans FB" size="28.0" />
+                    </font>
+                </Text>
+                <Text fx:id="messageText" layoutX="14.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="207.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+                <Separator layoutX="-1.0" layoutY="340.0" prefHeight="0.0" prefWidth="598.0" />
+                <Button fx:id="quitButton" layoutX="548.0" layoutY="351.0" mnemonicParsing="false" onMouseClicked="#quitClick" text="Quit" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

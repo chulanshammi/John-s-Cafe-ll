@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.aidController">
+    <children>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="517.0" prefWidth="598.0">
+            <children>
+                <Text fill="#942f2f" layoutX="161.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADDING ITEM DETAILS">
+                    <font>
+                        <Font name="Berlin Sans FB" size="28.0" />
+                    </font>
+                </Text>
+                <Text layoutX="58.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Code :" textAlignment="RIGHT" wrappingWidth="136.13671875">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutX="58.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity :" textAlignment="RIGHT" wrappingWidth="136.13671875">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutX="58.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchased Date :" textAlignment="RIGHT" wrappingWidth="136.13671875">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutX="58.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category :" textAlignment="RIGHT" wrappingWidth="136.13671875">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutX="58.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name :" textAlignment="RIGHT" wrappingWidth="136.13671875">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutX="58.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Brand :" textAlignment="RIGHT" wrappingWidth="136.13671875">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutX="58.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price :" textAlignment="RIGHT" wrappingWidth="136.13671875">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutX="58.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Image :" textAlignment="RIGHT" wrappingWidth="136.13671875">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="nameTextField" layoutX="214.0" layoutY="94.0" prefHeight="25.0" prefWidth="326.0" />
+                <TextField fx:id="codeTextField" layoutX="214.0" layoutY="52.0" onKeyTyped="#codeTyped" prefHeight="25.0" prefWidth="326.0" promptText="Numbers Only" />
+                <TextField fx:id="brandTextField" layoutX="214.0" layoutY="136.0" prefHeight="25.0" prefWidth="326.0" />
+                <TextField fx:id="priceTextField" layoutX="214.0" layoutY="178.0" onKeyTyped="#priceTyped" prefHeight="25.0" prefWidth="326.0" promptText="Numbers Only" />
+                <TextField fx:id="quantityTextField" layoutX="214.0" layoutY="219.0" onKeyTyped="#quantityTyped" prefHeight="25.0" prefWidth="326.0" promptText="Numbers Only" />
+                <TextField fx:id="categoryTextField" layoutX="214.0" layoutY="260.0" prefHeight="25.0" prefWidth="326.0" />
+                <DatePicker fx:id="purchasedDatePicker" layoutX="214.0" layoutY="301.0" prefHeight="25.0" prefWidth="326.0" promptText="DD/MM/YYYY" />
+                <Separator layoutY="468.0" prefHeight="0.0" prefWidth="598.0" />
+                <Button layoutX="214.0" layoutY="340.0" mnemonicParsing="false" text="Choose File" />
+                <Button layoutX="459.0" layoutY="481.0" mnemonicParsing="false" onMouseClicked="#clearAllClick" text="Clear All" />
+                <Button fx:id="submitButton" layoutX="530.0" layoutY="481.0" mnemonicParsing="false" onMouseReleased="#aidSubmitRelease" text="Submit" />
+            <Button fx:id="aidBack" layoutX="405.0" layoutY="481.0" mnemonicParsing="false" onMouseClicked="#backClick" text="Back" />
+            <ImageView fitHeight="132.0" fitWidth="191.0" layoutX="299.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="aidText" layoutX="14.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+            <Button layoutX="14.0" layoutY="428.0" mnemonicParsing="false" onMouseReleased="#sidRelease" prefHeight="25.0" prefWidth="60.0" text="SID" />
+            <Text layoutX="84.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-  Saving the Item Details" wrappingWidth="136.13671875" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

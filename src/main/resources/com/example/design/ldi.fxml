@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.ldiController">
+    <children>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="422.0" prefWidth="598.0">
+            <children>
+                <Text fill="#942f2f" layoutX="137.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECTED DEALER'S ITEMS">
+                    <font>
+                        <Font name="Berlin Sans FB" size="28.0" />
+                    </font>
+                </Text>
+                <Separator layoutY="370.0" prefHeight="0.0" prefWidth="598.0" />
+            <Button fx:id="vrlBack" layoutX="543.0" layoutY="383.0" mnemonicParsing="false" onMouseClicked="#backClick" text="Back" />
+            <TableView fx:id="ldiTable" layoutX="21.0" layoutY="84.0" prefHeight="280.0" prefWidth="557.0">
+              <columns>
+                <TableColumn fx:id="column1" prefWidth="201.0" text="Name" />
+                <TableColumn fx:id="column2" minWidth="9.0" prefWidth="111.0" text="Brand" />
+                  <TableColumn fx:id="column3" minWidth="0.0" prefWidth="151.0" text="Price(Rs.)" />
+                  <TableColumn fx:id="column4" minWidth="0.0" prefWidth="93.0" text="Quantity" />
+              </columns>
+            </TableView>
+            <Text layoutX="21.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer Name :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="dealerName" layoutX="115.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="75.13671875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
